@@ -10,7 +10,7 @@ val apiVersion = "0.3.0.3"
 val scalaJsIOVersion = "0.3.0.3"
 val scalaJsVersion = "2.12.1"
 
-homepage := Some(url("https://github.com/scalajs.io/jquery"))
+homepage := Some(url("https://github.com/scalajs.io/angularjs"))
 
 val commonSettings = Seq(
   version := apiVersion,
@@ -38,7 +38,7 @@ lazy val root = (project in file(".")).
   settings(
     name := "angularjs-bundle",
     organization := "io.scalajs",
-    description := "JQuery API bindings for Scala.js",
+    description := "AngularJS API bindings for Scala.js",
     version := apiVersion,
     scalaVersion := scalaJsVersion,
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-language:implicitConversions", "-Xlint"),
