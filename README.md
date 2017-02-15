@@ -1,6 +1,6 @@
 AngularJS API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [AngularJS 1.5.x](https://docs.angularjs.org/api)
+Type-safe bindings for [AngularJS 1.5.x](https://docs.angularjs.org/api)
 
 AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template 
 language and lets you extend HTML's syntax to express your application's components clearly and 
@@ -38,19 +38,19 @@ The following AngularJS services have been implemented thus far:
 | toaster           | angularjs-toaster              | AngularJS Toaster is a customized version of "toastr" non-blocking notification javascript library. |
 
 
-#### Build Requirements
+### Build Requirements
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Examples
+### Examples
 
 ##### Service Example
 
@@ -202,12 +202,12 @@ outcome onComplete {
 ```
 
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
 To add the Moment binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "angularjs-bundle" % "0.3.0.3"
+libraryDependencies += "io.scalajs.npm" %%% "angularjs-bundle" % "0.3.0.4"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
