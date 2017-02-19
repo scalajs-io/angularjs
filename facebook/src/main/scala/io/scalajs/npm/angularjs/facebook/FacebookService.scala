@@ -1,8 +1,9 @@
 package io.scalajs.npm.angularjs.facebook
 
 import io.scalajs.dom.html.browser.console
-import io.scalajs.nodejs.social.facebook._
+import io.scalajs.social.facebook._
 import io.scalajs.util.ScalaJsHelper._
+import io.scalajs.util.PromiseHelper.Implicits._
 import io.scalajs.npm.angularjs.Service
 
 import scala.concurrent.Promise
