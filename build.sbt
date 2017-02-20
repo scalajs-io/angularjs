@@ -23,8 +23,8 @@ val commonSettings = Seq(
   libraryDependencies ++= Seq(
     "org.scala-lang" % "scala-reflect" % scalaJsVersion,
     "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
-    "io.scalajs" %%% "dom" % scalaJsIOVersion,
-    "io.scalajs" %%% "jquery" % scalaJsIOVersion
+    "io.scalajs" %%% "dom-html" % scalaJsIOVersion,
+    "io.scalajs" %%% "jquery" % "3.1.1-1"
   ))
 
 lazy val root = (project in file(".")).
@@ -48,7 +48,7 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-reflect" % scalaJsVersion,
       "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
-      "io.scalajs" %%% "dom" % scalaJsIOVersion
+      "io.scalajs" %%% "dom-html" % scalaJsIOVersion
     ))
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -103,7 +103,7 @@ lazy val angular_facebook = (project in file("angularjs/facebook")).
     organization := "io.scalajs",
     description := "AngularJS/facebook binding for Scala.js",
     libraryDependencies ++= Seq(
-      "io.scalajs" %%% "social-facebook" % scalaJsIOVersion
+      "io.scalajs" %%% "facebook-api" % scalaJsIOVersion
     ))
 
 lazy val angular_md5 = (project in file("angularjs/md5")).
@@ -199,9 +199,9 @@ lazy val publishingSettings = Seq(
         </license>
       </licenses>
       <scm>
-        <connection>scm:git:github.com/scalajs-io/jquery.git</connection>
-        <developerConnection>scm:git:git@github.com:scalajs-io/jquery.git</developerConnection>
-        <url>github.com/scalajs-io/jquery.git</url>
+        <connection>scm:git:github.com/scalajs-io/angularjs.git</connection>
+        <developerConnection>scm:git:git@github.com:scalajs-io/angularjs.git</developerConnection>
+        <url>github.com/scalajs-io/angularjs.git</url>
       </scm>
       <developers>
         <developer>
