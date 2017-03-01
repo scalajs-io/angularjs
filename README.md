@@ -40,7 +40,6 @@ The following AngularJS services have been implemented thus far:
 
 ### Build Requirements
 
-* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
 
@@ -207,7 +206,7 @@ outcome onComplete {
 To add the Moment binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "angularjs-bundle" % "0.3.0.5"
+libraryDependencies += "io.scalajs.npm" %%% "angularjs-bundle" % "0.3.0.6"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
